@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+	body{
+		background-color: #cee5eb;
+		font-family: 'Poppins', sans-serif;
+	}
+	#container{
+		width: 100%;
+	}
+	/*--------------------------HEADER SECTION---------------------*/
+
+	#header{
+		background-color: white;
+		padding: 50px;
+	}
+	.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+    position:fixed;
+    }
+    .row{
+        max-width: 1180px;
+        margin: 0 auto;
+    } 
+    .logo{
+        height: 60px;
+        width: auto;
+        float: left;
+        margin-top: -35px;
+    }
+    .main-nav{
+        float: right;
+        margin-top: -30px;
+    }
+    .main-nav li{
+        display: inline-block;
+        list-style: none;
+        margin-left: 40px;
+    }
+    .main-nav li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 95%;
+        font-weight: 200;
+        color: black;	
+    }
+    .j-btn{
+        background-color: rgb(0, 136, 169, 1);
+        color: #ffffff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        padding: 8px 24px;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+
+
+	/*------------------------CONTENT1--------------------*/
+
+	#main-content1{
+		background-color: #131950;
+		padding: 230px;
+	}
+	h1{
+		color: white;
+		text-align: left;
+		left: 3%;
+		position: absolute;
+		margin-top: -90px;
+	}
+	p{
+		color: white;
+		text-align: left;
+		left: 3%;
+		position: absolute;
+		margin-bottom: 40px;
+	}
+
+	.coverpic{
+		margin-top: -160px;
+		position: absolute;
+		right: 4%;
+		clear: both;
+	}
+
+	/*----------------------CONTENT2-----------------*/
+	#main2content{
+		background-color: #dde1e7;
+		padding: 180px;
+	}
+	.idea{
+		margin-top: -120px;
+		position: absolute;
+		right: 4%;
+		clear: both;
+	}
+	.about-btn{
+		background-color: #de1f26;
+		color: #ffffff;
+		border: none;
+		border-radius: 50px;
+		cursor: pointer;
+		padding: 15px 30px;
+		margin-left: -52px;
+		margin-top: 50px;
+	}
+	
+
+	/*-----------------Footer--------------------*/
+	footer{
+		bottom: 0px;
+		background-color: #111;
+		color: #d9d9d9;
+		width: 100%;
+	}
+	#footer-content{
+		display: flex;
+	}
+	#footer-content .box{
+		flex-basis: 50%;
+		padding: 10px 20px;
+	}
+	.box h2{
+		font-size: 1.125rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.box .about-content{
+		margin: 20px 0 0 0;
+	}
+	.left{
+		margin-left: 20px;
+	}
+	.left .about-content p{
+		text-align: left;
+		margin-left: 10px;
+		margin-top: -10px;
+	}
+	.center{
+		margin-left: 200px;
+	}
+	
+	.center .about-content .fab{
+		font-size: 1.4375rem;
+		height: 45px;
+		width: 45px;
+		line-height: 45px;
+		text-align: center;
+		border-radius: 50%;
+		transition: 0.3s;
+		cursor: pointer;
+	} 
+	.center .about-content .fab:hover{
+		background: #f12020;
+	}
+	.center .about-content .fas{
+		font-size: 1.4375rem;
+		height: 45px;
+		width: 45px;
+		line-height: 45px;
+		text-align: center;
+		border-radius: 50%;
+		transition: 0.3s;
+		cursor: pointer;
+
+	}
+	.center .about-content .fas:hover{
+		background: #f12020;
+	}
+	.center .about-content .text{
+		font-size: 1.0625rem;
+		font-weight: 500;
+		padding-left: 10px;
+		text-decoration: none;
+		color: #d9d9d9;
+	}
+	.right{
+		margin-left: 100px;
+	}
+	.right form .submit-btn{
+		margin-top: 10px;
+	}
+	.right form .submit-btn button{
+		height: 25px;
+		width: 50%;
+		border: none;
+		outline: none;
+		background: #f12020;
+		font-size: 1.0625rem;
+		font-weight: 100;
+		cursor: pointer;
+		transition: 0.3s;
+		color: #ffffff;
+	}
+	#footeronly center{
+		padding: 5px;
+		font-size: 0.9375rem;
+		background: #151515;
+	}
+	.bottom center span{
+		color: #656565;
+	}    
+</style>
+<head>
+	<title>Home - Learn N Share</title>
+
+	 <!-----FONTAWESOME LINK-------->
+    <script src="https://kit.fontawesome.com/31c4898ef7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<nav>
+               <div class="row clearfix">
+                   <img src="img/logo.png" class="logo">
+                   <ul class="main-nav">
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="#">Team</a></li>
+                       <li><a href="channel.html">Channels</a></li>
+                       <a href="join.html"><button class="j-btn">Join us</button></a>
+                   </ul>
+               </div>
+           </nav>
+		</div>
+		
+
+	    <div id="main-content1">
+	    	<h1>We believe in Self-growth<br>
+	    	from Self-learning.</h1>
+	        <p><q>Going beyond conducting and attending seminars, we <br>
+	        brought the idea of working in a project-based module<br> emphasizing self-learning.</q></p>
+	    	<img src="img/cover.jpg" class="coverpic" alt="connecting innovators" style="width:50%; height:50%;">
+		</div>
+
+
+		<div id="main2content">
+			<h1 style="color:red; right: 3%; position: absolute;">Let's Learn Together.</h1>
+			<p style="color: black; margin-top: -30px;">We are serious about elevating your carrer to a new height.</p>
+			<img src="img/idea.png" class="idea" alt="Learn together" style="width:35%; height:50%;">
+			<a href="#"><button class="about-btn">About us</button></a>
+		</div>
+
+
+        <!---------------FOOTER ------------------->
+        <footer>
+        	<div id="footer-content">
+        		<div class="left box">
+        			<h2>About us</h2>
+        			<div class="about-content">
+        				<p>Learn N Share is a non-profit organization<br> working to bridge the gap between theoretical<br> and practical knowledge for Information<br> Technology students.</p>
+				    </div>
+
+			    </div>
+
+			    <div class="center box">
+			    	<h2>Connect with us</h2>
+			    	<div class="about-content">
+			    		<span class="fab fa-facebook-f"></span>
+					    <span class="fab fa-linkedin"></span>
+					    <span class="fab fa-medium"></span>
+					    <span class="fas fa-envelope"></span>
+					</div>
+				</div>
+
+				<div class="right box">
+					<h2>Contact us</h2>
+					<div class="about-content">
+						<form action="#">
+							<div class="email">
+								<div class="text">Email *</div>
+								<input type="email" required>
+							</div>
+
+							<div class="msg">
+								<div class="text">Message *</div>
+								<textarea rows="2" cols="25" reuired></textarea>
+							</div>
+							<div class="submit-btn">
+								<button type="submit">Send</button>
+							</div>
+				        </form>
+				    </div>
+				</div>
+			</div>
+
+			<div id="footeronly">
+				<center>
+					<span class="far fa-copyright"></span><span>  2020 All rights reserved.</span>
+				</center>
+	        </div>
+	    </footer>
+		
+
+	    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+	body{
+		background-color: #cee5eb;
+		font-family: 'Poppins', sans-serif;
+	}
+	#container{
+		width: 100%;
+	}
+	/*--------------------------HEADER SECTION---------------------*/
+
+	#header{
+		background-color: white;
+		padding: 50px;
+	}
+	.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+    position:fixed;
+    }
+    .row{
+        max-width: 1180px;
+        margin: 0 auto;
+    } 
+    .logo{
+        height: 60px;
+        width: auto;
+        float: left;
+        margin-top: -35px;
+    }
+    .main-nav{
+        float: right;
+        margin-top: -30px;
+    }
+    .main-nav li{
+        display: inline-block;
+        list-style: none;
+        margin-left: 40px;
+    }
+    .main-nav li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 95%;
+        font-weight: 200;
+        color: black;	
+    }
+    .j-btn{
+        background-color: rgb(0, 136, 169, 1);
+        color: #ffffff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        padding: 8px 24px;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+    footer{
+		bottom: 0px;
+		background-color: #111;
+		color: #d9d9d9;
+		width: 100%;
+	}
+	#footer-content{
+		display: flex;
+	}
+	#footer-content .box{
+		flex-basis: 50%;
+		padding: 10px 20px;
+	}
+	.box h4{
+		font-size: 1.125rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.box .about-content{
+		margin: 20px 0 0 0;
+	}
+	.left{
+		margin-left: 20px;
+	}
+	.left .about-content p{
+		text-align: left;
+		margin-left: 10px;
+		margin-top: -10px;
+	}
+	.center{
+		margin-left: 200px;
+	}
+	
+	.center .about-content .fab{
+		font-size: 1.4375rem;
+		height: 45px;
+		width: 45px;
+		line-height: 45px;
+		text-align: center;
+		border-radius: 50%;
+		transition: 0.3s;
+		cursor: pointer;
+	} 
+	.center .about-content .fab:hover{
+		background: #f12020;
+	}
+	.center .about-content .fas{
+		font-size: 1.4375rem;
+		height: 45px;
+		width: 45px;
+		line-height: 45px;
+		text-align: center;
+		border-radius: 50%;
+		transition: 0.3s;
+		cursor: pointer;
+
+	}
+	.center .about-content .fas:hover{
+		background: #f12020;
+	}
+	.center .about-content .text{
+		font-size: 1.0625rem;
+		font-weight: 500;
+		padding-left: 10px;
+		text-decoration: none;
+		color: #d9d9d9;
+	}
+	.right{
+		margin-left: 100px;
+	}
+	.right form .submit-btn{
+		margin-top: 10px;
+	}
+	.right form .submit-btn button{
+		height: 25px;
+		width: 50%;
+		border: none;
+		outline: none;
+		background: #f12020;
+		font-size: 1.0625rem;
+		font-weight: 100;
+		cursor: pointer;
+		transition: 0.3s;
+		color: #ffffff;
+	}
+	#footeronly center{
+		padding: 5px;
+		font-size: 0.9375rem;
+		background: #151515;
+	}
+	.bottom center span{
+		color: #656565;
+	}    
+</style>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination</title>
+    
+    <!-----FONTAWESOME LINK-------->
+    <script src="https://kit.fontawesome.com/31c4898ef7.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="pagin.css" />
+</head>
+<body>
+	<div id="header">
+		<nav>
+			<div class="row-clearfix">
+				<img src="img/logo.png" class="logo" alt="logo">
+				<ul class="main-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">Team</a></li>
+					<li><a href="index.html">Channels</a></li>
+					<a href="join.html"><button class="j-btn">Join us</button></a>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<header>
+		<h1>Project Titles</h1>
+	</header>
+	<main>
+		<div class="list" id="list"></div>
+		<div class="pagenumbers" id="pagination"></div>
+	</main>
+
+	<footer>
+        	<div id="footer-content">
+        		<div class="left box">
+        			<h4>About us</h4>
+        			<div class="about-content">
+        				<p>Learn N Share is a non-profit organization working to bridge the gap between theoretical and practical knowledge for Information Technology students.</p>
+				    </div>
+
+			    </div>
+
+			    <div class="center box">
+			    	<h4>Connect with us</h4>
+			    	<div class="about-content">
+			    		<span class="fab fa-facebook-f"></span>
+					    <span class="fab fa-linkedin"></span>
+					    <span class="fab fa-medium"></span>
+					    <span class="fas fa-envelope"></span>
+					</div>
+				</div>
+
+				<div class="right box">
+					<h4>Contact us</h4>
+					<div class="about-content">
+						<form action="#">
+							<div class="email">
+								<div class="text">Email *</div>
+								<input type="email" required>
+							</div>
+
+							<div class="msg">
+								<div class="text">Message *</div>
+								<textarea rows="2" cols="25" reuired></textarea>
+							</div>
+							<div class="submit-btn">
+								<button type="submit">Send</button>
+							</div>
+				        </form>
+				    </div>
+				</div>
+			</div>
+
+			<div id="footeronly">
+				<center>
+					<span class="far fa-copyright"></span><span>  2020 All rights reserved.</span>
+				</center>
+	        </div>
+	    </footer>
+	<script src="pagin.js"></script>
+</body>
+</html>
